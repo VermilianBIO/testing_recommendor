@@ -1,4 +1,4 @@
-# testing_recommendor
+# Description
 Tester code of the recommendor system by counting the frequency of other items appearing together with the focus item in the sale record.
 For example, if there's a sale record with Item A,B,C in the same receipt. When we use A as the focus target, B and C should appear as the result. 
 
