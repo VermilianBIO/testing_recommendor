@@ -12,7 +12,7 @@ The score table such as above then will be use by further calculation methods be
 
 ------
 
-1.Simple add-up
+#1.**Simple add-up**
 - Counting the frequency as is -- the score of each item is as high as how much they appear together with the focus item. 
 - If the focus item is a set of multiple, the score list of both item are summed together for the final result
 
@@ -22,7 +22,8 @@ If we use [A] as Focal point, [B:10],[C:8],[D:4] will be the result
 
 If we use [A,B] then we will have [C:12],[D:13] as the result
 
-2.Give priority to duplicate items
+------
+#2.**Give priority to duplicate items**
 - Just like #1. But when focus on set of multiple items, result items which exist on multiple will be given higher priority even if the result score is lower
 
 For example,
@@ -33,10 +34,11 @@ Product E: [C:1,D:2,F:50]
 
 Then if we use [A,B,E], we will have [C:13,3],[D:15,2],[F:50,1] where the 2nd number in the array is the priority level. Since C appears on all 3 items result list, C would be the first candidate when we try to recommend something with [A,B,E] as the focus, followed by [D] and [F] despite [F] having a very high score of 50.
 
-3.Create score list not for indivual items but for each items combination in the sale record.
--Unlike the 2 methods above, this method use another score table
+------
+#3.**Create score list not for indivual items but for each items combination in the sale record.**
+- Unlike the 2 methods above, this method use another score table
 
-For example, if we have a sale record of [A,B,C],[A,D,E]
+For example, if we have records of [A,B,C],[A,D,E]
 
 the pre-calculated score table will look like this
 
