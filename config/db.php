@@ -3,10 +3,10 @@
 class Database {
 
 	private $host = "localhost";
-    private $db_name = "db_name";
-    private $username = "user";
-    private $password = "password";
-    public $conn;
+	private $db_name = "db_name";
+	private $username = "user";
+	private $password = "password";
+	public $conn;
 	
 	public function getConnection(){
 		
